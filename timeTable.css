@@ -1,0 +1,102 @@
+header{
+    position: relative;
+    display: flex;
+    overflow: hidden;
+    padding: 20px 0;
+    height: 250px;
+    background-image: url(教室.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.keyakiFes{
+    top: 40px;
+    left: 7px;
+}
+.keyakiFes h3{
+    font-size: 200%;
+}
+
+main{
+    margin: 20px 4%;
+    min-height: 600px;
+}
+
+.guide{
+    display: none;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.timeTable{
+    display: flex;
+    padding: 2px;
+    width: 100%;
+    justify-content: space-between;
+
+}
+main h3{
+    margin: 5px 0;
+    border: none;
+}
+.timeTable h4{
+    padding: 3px 0;
+    border: none;
+    color: aliceblue;
+    background-color: midnightblue;
+}
+.gym, .ah1, .ah2{
+
+    min-height: 200px;
+    width: 32%;
+}
+.at, .event{
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    /* border: solid 1px midnightblue; */
+    background-color: aliceblue;
+    filter: drop-shadow(0 0 1px midnightblue);
+    border-radius: 20px;
+}
+.at{
+    margin-bottom: 20px;
+}
+.by{
+    height: 24px;
+}
+.by img{
+    height: 60%;
+    margin-right: 5px;
+}
+.triBottom{
+    margin: 10px auto;
+    height: 20px;
+    width: 35px;
+    clip-path: polygon(0 0, 100% 0, 50% 100%);
+    background-color: lightsteelblue;
+}
+
+
+@media screen and (max-width: 959px) {
+	/* 959px以下に適用されるCSS（タブレット用） */
+}
+@media screen and (max-width: 480px) {
+	/* 480px以下に適用されるCSS（スマホ用） */
+    .guide{
+        display: block;
+    }
+    .scroll{
+        overflow-x: scroll;
+        width: 100%;
+    }
+    .timeTable{
+        padding: 20px 0;
+        width: 300%;
+        border: double 3px lightsteelblue;
+    }
+    .gym, .ah1, .ah2{
+        margin: 0 1%;
+        width: 98%;
+    }
+}

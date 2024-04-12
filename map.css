@@ -1,0 +1,123 @@
+header{
+    position: relative;
+    display: flex;
+    overflow: hidden;
+    padding: 20px 0;
+    height: 250px;
+    background-image: url(教室.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.keyakiFes{
+    top: 40px;
+    left: 20px;
+}
+main{
+    margin: 20px 4%;
+    min-height: 600px;
+}
+
+nav{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+li{
+    padding: 5px 20px;
+    list-style: none;
+    color: rgb(46, 40, 87);
+    background-color: aliceblue;
+    border: solid 1px lightsteelblue;
+    border-radius: 5px;
+
+}
+.floorMap{
+    display: flex;
+    padding: 0;
+    /* height: 460px; */
+    height: fit-content;
+    width: 100%;
+    border: double 3px lightsteelblue;
+
+}
+
+.mapImg{
+    width: 70%;
+}
+.mapImg img{
+    width: 100%;
+    filter: drop-shadow(0 0 2px lightsteelblue);
+}
+
+.mapInfo{
+    position: relative;
+    height: 100%;
+    padding: 5px 0;
+    width: 30%;
+    /* border-top: double 3px lightsteelblue;
+    border-bottom: double 3px lightsteelblue; */
+
+
+}
+
+/* .mapInfo::before, .mapInfo::after{
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 100%;
+}
+.mapInfo::before{
+    top: 0;
+    background: linear-gradient(aliceblue, rgb(0,0,0,0));
+}
+.mapInfo::after{
+    bottom: 0;
+    background: linear-gradient(rgb(0,0,0,0), lightsteelblue);
+} */
+
+
+.first{
+    overflow-y: scroll;
+    height: fit-content;
+    padding: 0 5px;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+.first::-webkit-scrollbar{
+    display: none;
+  }
+/* .first div{
+    margin-bottom: 5px;
+    padding: 5px;
+    height: fit-content;
+    border: solid 1px lightsteelblue;
+    border-radius: 5px;
+} */
+.mapInfo h3{
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    border-bottom: solid 1px lightsteelblue;
+}
+
+
+
+@media screen and (max-width: 959px) {
+	/* 959px以下に適用されるCSS（タブレット用） */
+}
+@media screen and (max-width: 480px) {
+	/* 480px以下に適用されるCSS（スマホ用） */
+    .floorMap{
+        display: grid;
+        height: fit-content;
+        width: 100%;
+    }
+    .mapImg, .mapInfo{
+        width: 100%;
+    }
+    .first{
+        height: fit-content;
+    }
+
+
+}

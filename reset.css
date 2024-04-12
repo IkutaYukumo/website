@@ -1,0 +1,445 @@
+
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+/* ----------------------------------------------------- */
+
+
+*{
+    box-sizing: border-box;
+    /* overflow: hidden; */
+}
+body{
+    background-color: aliceblue;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+.mono{
+    font-family: monospace;
+}
+h1, h2, h3, h4, h5{
+    margin: 0;
+    margin-bottom: 10px;
+    padding: 0;
+    /* color: rgb(9, 9, 46); */
+    color: rgb(46, 40, 87);
+    border-bottom: solid 2px lightsteelblue;
+}
+/* h1{
+    height: 18px;
+    overflow: hidden;
+    text-align: center;
+    color: aliceblue;
+    box-sizing: border-box;
+    background-color: midnightblue;
+    line-height: 80%;
+} */
+p{
+    line-height: 150%;
+    color: rgb(46, 40, 87);
+}
+a{
+    text-decoration: none;
+    color: rgb(46, 40, 87);
+}
+a:hover{
+    filter: contrast(90%);
+}
+.flex, .flexP{
+    display: flex;
+}
+.margin{
+    margin: 20px 0;
+}
+.migiYose{
+    margin-right: 0;
+    margin-left: auto;
+}
+
+
+header div{
+    margin: 0 auto;
+}
+header h1, header h2, header h3, header h4{
+    color: aliceblue;
+    border: none;
+}
+header h1{
+    font-size: 400%;
+}
+header h2{
+    font-size: 300%;
+}
+header h3{
+    font-size: 250%;
+}
+header h4{
+    font-size: 150%;
+}
+
+.keyakiFes{
+    z-index: 3;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    filter: drop-shadow(0 0 1px lightslategray);
+}
+.circle, .circleM, .circleS{
+    position: relative;
+    border-radius: 50%;
+    background-color: rgba(176, 196, 222, 0.6); /*lightsteelblue*/
+}
+.circle{
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateX(-20%) translateY(-50%);
+    height: 330px;
+    width: 330px;
+}
+.circleM{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transform: translateX(10%) translateY(10%);
+    height: 500px;
+    width: 500px;
+}
+.circleS{
+    height: 150px;
+    width: 150px;
+}
+.circle::before, .circleM::before, .circleS::before{
+    position: absolute;
+    content: "";
+    top: -2%;
+    left: -2%;
+    height: 104%;
+    width: 104%;
+    border-radius: 50%;
+    box-sizing: border-box;
+    border: solid 4px lightsteelblue;
+}
+.circle::after, .circleM::after, .circleS::after{
+    position: absolute;
+    content: "";
+    top: -4%;
+    left: -4%;
+    height: 108%;
+    width: 108%;
+    border-radius: 50%;
+    box-sizing: border-box;
+    border: solid 2px lightsteelblue;
+    opacity: 0.5;
+}
+
+main h1{
+    font-size: 150%;
+    padding-bottom: 5px;
+}
+main h2{
+    font-size: 130%;
+}
+main h3{
+    font-size: 120%;
+    padding-bottom: 3px;
+}
+
+aside .pc{
+    z-index: 20;
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -50px;
+    width: 400px;
+    border-right: 50px solid transparent;
+    border-left: 50px solid transparent;
+    border-top: 60px solid lightsteelblue;
+    filter: drop-shadow(0 0 3px lightslategray);
+}
+aside .pc::after{
+    content: "";
+    position: absolute;
+    top: -7px;
+    left: 45%;
+    height: 1px;
+    width: 10%;
+    border-bottom: double 3px lightslategray;
+}
+aside .pc:hover{
+    top: 0;
+}
+
+footer{
+    padding: 10px 5vw;
+    height: fit-content;
+    background-color: rgba(176, 196, 222, 0.5);/*lightsteelblue*/
+}
+footer a:hover{
+    border-bottom: solid 1px rgb(46, 40, 87);
+}
+footer p{
+    font-size: large;
+}
+.school{
+    margin: 15px 0;
+}
+footer h2{
+    margin: 3px 0;
+    font-size: 130%;
+    border: none;
+}
+footer h3{
+    margin: 0;
+    border: none;
+}
+footer .flex{
+    margin: 5px 0;
+}
+.tagF{
+    margin: auto 0;
+    margin-right: 10px;
+    padding: 4px 5px;
+    width: 80px;
+    text-align: center;
+    border: solid 2px rgb(46, 40, 87);
+    border-radius: 5px;
+}
+
+address{
+    margin-top: 15px;
+    padding-top: 10px;
+    border-top: double 3px midnightblue;
+}
+address p{
+    font-size: medium;
+}
+
+.pc div{
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    left: 5%;
+    top: -54px;
+    height: 40px;
+    width: 90%;
+}
+.pc a{
+    z-index: 25;
+    position: relative;
+    height: 40px;
+    width: 40px;
+    margin: 0 5px;
+    border: solid 1px rgb(46, 40, 87);
+    border-radius: 50%;
+    filter: drop-shadow(0 0 1px lightslategray);
+    background-color: aliceblue;
+}
+.pc img{
+    overflow: hidden;
+    margin: 15%;
+    height: 70%;
+    width: 70%;
+}
+
+.pc a p{
+    display: none;
+    position: absolute;
+    top: 41px;
+    left: 35px;
+    width: fit-content;
+    white-space: nowrap;
+    padding: 0 5px;
+    background-color: aliceblue;
+    border: solid 1px midnightblue;
+    border-radius: 5px;
+}
+.pc a:hover p{
+    display: block;
+}
+
+.serectT{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: solid 2px lightsteelblue;
+}
+.serectT h1{
+    border: none;
+    margin: 0;
+}
+select{
+    margin-left: 10px;
+    padding: 2px 15px;
+    height: 25px;
+    color: rgb(46, 40, 87);
+    background-color: aliceblue;
+    border: solid 1px lightsteelblue;
+    border-radius: 5px;
+}
+
+.button{
+    display: none;
+}
+.phone{
+    display: none;
+}
+@media screen and (max-width: 959px) {
+	/* 959px以下に適用されるCSS（タブレット用） */
+}
+@media screen and (max-width: 480px) {
+	/* 480px以下に適用されるCSS（スマホ用） */
+
+    .circle{
+        transform: scale(60%) translate(-50%, -80%);
+    }
+    .flexP{
+        display: grid;
+        justify-items: center;
+    }
+    .pc{
+        display: none;
+    }
+    .phone{
+        z-index: 20;
+        display: block;
+        position: fixed;
+        top: 0;
+        padding: 5px;
+        height: 100%;
+        width: 100%;
+        background-color: lightsteelblue;
+    }
+    button{
+        overflow: hidden;
+        z-index: 22;
+        display: block;
+        position: fixed;
+        top: 0;
+        right: 0;
+        height: 40px;
+        width: 40px;
+        text-align: center;
+        background-color: rgba(176, 196, 222, 0.6);
+        border: none;
+        filter: drop-shadow(0 0 2px lightslategray);
+    }
+    button p{
+        margin: auto;
+        font-size: 200%;
+        color: aliceblue;
+        filter: drop-shadow(0 0 1px lightslategray);
+
+    }
+    .phone h2{
+        font-size: 180%;
+        border: none;
+        margin-bottom: 20px;
+    }
+    .phone a{
+        border-bottom: solid 1px rgb(46, 40, 87);
+    }
+    .phone p{
+        margin: 10px 0;
+        font-size: x-large;
+    }
+
+}

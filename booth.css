@@ -1,0 +1,96 @@
+header{
+    position: relative;
+    display: flex;
+    overflow: hidden;
+    height: 250px;
+    background-image: url(教室.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.keyakiFes{
+    top: 40px;
+    left: 18px;
+}
+
+main{
+    margin: 20px 4%;
+    min-height: 600px;
+}
+
+
+.booth{
+    display: flex;
+    margin: 10px 0;
+    height: fit-content;
+    width: 100%;
+    /* border: solid 1px lightsteelblue; */
+    background-color: aliceblue;
+    filter: drop-shadow(0 0 2px lightsteelblue);
+    border-radius: 5px;
+}
+.booth .flexP{
+    width: 100%;
+}
+.imageImage{
+    margin: 10px;
+    height: 150px;
+    width: 200px;
+}
+.imageImage img{
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+    /* clip-path: polygon(0 6%, 0 94%, 5% 100%, 95% 100%, 100% 94%, 100% 6%, 95% 0, 5% 0); */
+    /* clip-path: polygon(0 6%, 0 100%, 95% 100%, 100% 94%, 100% 0, 5% 0); */
+}
+
+.boothInfo{
+    width: 80%;
+    margin: 10px;
+}
+.boothInfo .flexP{
+    border-bottom: double 3px lightsteelblue;
+}
+.boothInfo h2{
+    margin-bottom: 5px;
+    border: none;
+}
+.boothInfo .flex{
+    margin: 0 10px;
+}
+.tag{
+    height: fit-content;
+    margin: 0 10px;
+    padding: 0 12px;
+    height: 24px;
+    color: aliceblue;
+    background-color: midnightblue;
+    border-radius: 12px;
+
+}
+.tag img{
+    height: 60%;
+    margin-right: 5px;
+}
+
+@media screen and (max-width: 959px) {
+	/* 959px以下に適用されるCSS（タブレット用） */
+}
+@media screen and (max-width: 480px) {
+	/* 480px以下に適用されるCSS（スマホ用） */
+
+    .boothInfo{
+        width: 95%;
+    }
+    .boothInfo .flexP{
+        border: none;
+    }
+    .boothInfo .flex{
+        justify-content: center;
+        width: 100%;
+        padding-top: 5px;
+        border-top: double 3px lightsteelblue;
+    }
+}
