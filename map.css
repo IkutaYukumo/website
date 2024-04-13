@@ -104,9 +104,10 @@ li{
 
 @media screen and (max-width: 959px) {
 	/* 959px以下に適用されるCSS（タブレット用） */
-}
-@media screen and (max-width: 480px) {
-	/* 480px以下に適用されるCSS（スマホ用） */
+    .keyakiFes{
+        transform: scale(60%) translate(-35%, -70%);
+    }
+
     .floorMap{
         display: grid;
         height: fit-content;
@@ -118,6 +119,10 @@ li{
     .first{
         height: fit-content;
     }
+}
+@media screen and (max-width: 480px) {
+	/* 480px以下に適用されるCSS（スマホ用） */
+
 
 
 }

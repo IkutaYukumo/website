@@ -82,38 +82,7 @@ main{
     border-bottom: solid 1px lightsteelblue;
 }
 
-.text{
-    position: relative;
-    margin: 50px 5vw;
-    padding: 10px 30px;
-    min-height: 100px;
-    background-color: aliceblue;
-    filter: drop-shadow(0 0 1px lightsteelblue);
-}
-.text::before, .text::after{
-    position: absolute;
-    content: "";
-    height: 30px;
-    width: 30px;
-}
-.text::before{
-    top: -3px;
-    left: -3px;
-    border-top: solid 4px lightsteelblue;
-    border-left: solid 4px lightsteelblue;
-    opacity: 0.6;
-}
-.text::after{
-    bottom: -3px;
-    right: -3px;
-    border-bottom: solid 4px lightsteelblue;
-    border-right: solid 4px lightsteelblue;
-    opacity: 0.6;
-}
-.text div{
-    margin: auto;
-    text-align: center;
-}
+
 
 
 .rargeBox{

@@ -104,6 +104,9 @@ input, select {
 
 /* ----------------------------------------------------- */
 
+.none{
+    display: none;
+}
 
 *{
     box-sizing: border-box;
@@ -230,6 +233,39 @@ header h4{
     box-sizing: border-box;
     border: solid 2px lightsteelblue;
     opacity: 0.5;
+}
+
+.text{
+    position: relative;
+    margin: 50px 5vw;
+    padding: 10px 30px;
+    min-height: 100px;
+    background-color: aliceblue;
+    filter: drop-shadow(0 0 1px lightsteelblue);
+}
+.text::before, .text::after{
+    position: absolute;
+    content: "";
+    height: 30px;
+    width: 30px;
+}
+.text::before{
+    top: -3px;
+    left: -3px;
+    border-top: solid 4px lightsteelblue;
+    border-left: solid 4px lightsteelblue;
+    opacity: 0.6;
+}
+.text::after{
+    bottom: -3px;
+    right: -3px;
+    border-bottom: solid 4px lightsteelblue;
+    border-right: solid 4px lightsteelblue;
+    opacity: 0.6;
+}
+.text div{
+    margin: auto;
+    text-align: center;
 }
 
 main h1{
@@ -376,7 +412,7 @@ select{
     border-radius: 5px;
 }
 
-.button{
+button{
     display: none;
 }
 .phone{
@@ -384,29 +420,12 @@ select{
 }
 @media screen and (max-width: 959px) {
 	/* 959px以下に適用されるCSS（タブレット用） */
-}
-@media screen and (max-width: 480px) {
-	/* 480px以下に適用されるCSS（スマホ用） */
-
     .circle{
         transform: scale(60%) translate(-50%, -80%);
     }
-    .flexP{
-        display: grid;
-        justify-items: center;
-    }
+
     .pc{
         display: none;
-    }
-    .phone{
-        z-index: 20;
-        display: block;
-        position: fixed;
-        top: 0;
-        padding: 5px;
-        height: 100%;
-        width: 100%;
-        background-color: lightsteelblue;
     }
     button{
         overflow: hidden;
@@ -429,17 +448,41 @@ select{
         filter: drop-shadow(0 0 1px lightslategray);
 
     }
+    .phone{
+        z-index: 20;
+        position: fixed;
+        top: 0;
+        padding: 10px;
+        height: 100%;
+        width: 100%;
+        background-color: lightsteelblue;
+    }
+
     .phone h2{
         font-size: 180%;
         border: none;
-        margin-bottom: 20px;
+        margin-bottom: 80px;
     }
-    .phone a{
-        border-bottom: solid 1px rgb(46, 40, 87);
+    .phone h2, .phone a{
+        color: aliceblue;
+        filter: drop-shadow(0 0 1px lightslategray);
+    }
+    .phone a:hover{
+        border-bottom: solid 2px aliceblue;
     }
     .phone p{
-        margin: 10px 0;
+        margin: 10px 20px;
         font-size: x-large;
+        font-weight: bold;
+
+    }
+}
+@media screen and (max-width: 480px) {
+	/* 480px以下に適用されるCSS（スマホ用） */
+
+    .flexP{
+        display: grid;
+        justify-items: center;
     }
 
 }

@@ -1,3 +1,4 @@
+
 header{
     position: relative;
     display: flex;
@@ -33,6 +34,7 @@ main{
     width: 100%;
 }
 .imageImage{
+    flex-shrink: 0;
     margin: 10px;
     height: 150px;
     width: 200px;
@@ -77,6 +79,9 @@ main{
 
 @media screen and (max-width: 959px) {
 	/* 959px以下に適用されるCSS（タブレット用） */
+    .keyakiFes{
+        transform: scale(60%) translate(-35%, -70%);
+    }
 }
 @media screen and (max-width: 480px) {
 	/* 480px以下に適用されるCSS（スマホ用） */
@@ -92,5 +97,8 @@ main{
         width: 100%;
         padding-top: 5px;
         border-top: double 3px lightsteelblue;
+    }
+    .imageImage{
+        margin-bottom: 0;
     }
 }
