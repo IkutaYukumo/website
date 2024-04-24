@@ -136,7 +136,7 @@ h1, h2, h3, h4, h5{
     background-color: midnightblue;
     line-height: 80%;
 } */
-p{
+p, li{
     line-height: 150%;
     color: rgb(46, 40, 87);
 }
@@ -266,6 +266,15 @@ header h4{
 .text div{
     margin: auto;
     text-align: center;
+}
+.text h5{
+    display: inline;
+    line-height: 200%;
+    border: none;
+}
+.text ul{
+    list-style: square;
+    padding-left: 20px;
 }
 
 main h1{
@@ -480,6 +489,10 @@ button{
 @media screen and (max-width: 480px) {
 	/* 480px以下に適用されるCSS（スマホ用） */
 
+    .text{
+        margin: 50px 0;
+        padding: 10px 5px;
+    }
     .flexP{
         display: grid;
         justify-items: center;

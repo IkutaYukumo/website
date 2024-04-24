@@ -32,10 +32,18 @@ li{
     border-radius: 5px;
 
 }
+.flex{
+    overflow: hidden;
+}
+.floor{
+    flex-shrink: 0;
+    margin-top: -90px;
+    padding-top: 90px;
+    width: 100%;
+}
 .floorMap{
     display: flex;
     padding: 0;
-    /* height: 460px; */
     height: fit-content;
     width: 100%;
     border: double 3px lightsteelblue;
@@ -47,7 +55,7 @@ li{
 }
 .mapImg img{
     width: 100%;
-    filter: drop-shadow(0 0 2px lightsteelblue);
+    /* filter: drop-shadow(0 0 2px lightsteelblue); */
 }
 
 .mapInfo{
@@ -77,14 +85,14 @@ li{
 } */
 
 
-.first{
+.mapText{
     overflow-y: scroll;
     height: fit-content;
     padding: 0 5px;
     -ms-overflow-style: none;
     scrollbar-width: none;
 }
-.first::-webkit-scrollbar{
+.mapText::-webkit-scrollbar{
     display: none;
   }
 /* .first div{
@@ -116,7 +124,7 @@ li{
     .mapImg, .mapInfo{
         width: 100%;
     }
-    .first{
+    .mapText{
         height: fit-content;
     }
 }
