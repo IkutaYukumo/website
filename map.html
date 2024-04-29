@@ -23,16 +23,16 @@
 
     <main>
         <h1>校内マップ</h1>
-        <P>模擬店の場所などの情報が公開されます。もうしばらくお待ちください。</P>
+
         <nav>
-            <a href=""><li>1F</li></a>
-            <a href=""><li>2F</li></a>
-            <a href=""><li>3F</li></a>
-            <a href=""><li>4F</li></a>
+            <a href="#" class="floorLink" data-target="floor1"><li>1F</li></a>
+            <a href="#" class="floorLink" data-target="floor2"><li>2F</li></a>
+            <a href="#" class="floorLink" data-target="floor3"><li>3F</li></a>
+            <a href="#" class="floorLink" data-target="floor4"><li>4F</li></a>
         </nav>
 
 <!-- ------------------------------------------------------------------ -->
-        <div id="1F" class="floor">
+        <div class="floor floor1">
             <div class="floorMap">
                 <div class="mapImg"><img src="img/2F.png" alt=""></div>
                 <div class="mapInfo">
@@ -52,7 +52,7 @@
             </div>
         </div>
         
-        <div id="2F" class="floor">
+        <div class="floor floor2 none">
             <div class="floorMap">
                 <div class="mapImg"><img src="img/2F.png" alt=""></div>
                 <div class="mapInfo">
@@ -72,7 +72,7 @@
             </div>
         </div>
 
-        <div id="3F" class="floor">
+        <div class="floor floor3 none">
             <div class="floorMap">
                 <div class="mapImg"><img src="img/3F.png" alt=""></div>
                 <div class="mapInfo">
@@ -92,7 +92,7 @@
             </div>
         </div>
 
-        <div id="4F" class="floor">
+        <div class="floor floor4 none">
             <div class="floorMap">
                 <div class="mapImg"><img src="img/3F.png" alt=""></div>
                 <div class="mapInfo">
@@ -154,6 +154,7 @@
     </footer>
 
     <script type="text/javascript" src="aside.js"></script>
+    <script type="text/javascript" src="map.js"></script>
 </body>
 
 

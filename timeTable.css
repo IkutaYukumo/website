@@ -54,9 +54,9 @@ main h3{
     position: relative;
     overflow: hidden;
     text-align: center;
-    /* border: solid 1px midnightblue; */
     background-color: aliceblue;
-    filter: drop-shadow(0 0 1px midnightblue);
+    border: solid 1px midnightblue;
+    /* filter: drop-shadow(0 0 1px midnightblue); */
     border-radius: 20px;
 }
 .at{
@@ -80,6 +80,9 @@ main h3{
 
 @media screen and (max-width: 959px) {
 	/* 959px以下に適用されるCSS（タブレット用） */
+    header{
+        height: 150px;
+    }
     .keyakiFes{
         transform: scale(60%) translate(-30%, -70%);
     }

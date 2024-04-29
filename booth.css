@@ -22,11 +22,13 @@ main{
 
 .booth{
     display: flex;
+    overflow: hidden;
     margin: 10px 0;
     height: fit-content;
     width: 100%;
     /* border: solid 1px lightsteelblue; */
     background-color: aliceblue;
+    border: solid 1px lightsteelblue;
     filter: drop-shadow(0 0 2px lightsteelblue);
     border-radius: 5px;
 }
@@ -49,8 +51,10 @@ main{
 }
 
 .boothInfo{
+    flex-shrink: 0;
     width: 80%;
     margin: 10px;
+
 }
 .boothInfo .flexP{
     border-bottom: double 3px lightsteelblue;
@@ -63,6 +67,7 @@ main{
     margin: 0 10px;
 }
 .tag{
+    flex-shrink: 0;
     height: fit-content;
     margin: 0 10px;
     padding: 0 12px;
@@ -79,26 +84,46 @@ main{
 
 @media screen and (max-width: 959px) {
 	/* 959px以下に適用されるCSS（タブレット用） */
+    header{
+        height: 150px;
+    }
     .keyakiFes{
         transform: scale(60%) translate(-35%, -70%);
     }
+    .booth{
+        display: grid;
+    }
+    .imageImage{
+        margin: auto;
+        margin-top: 10px;
+    }
+    .boothInfo{
+        width: 95%;
+        margin: auto;
+    }
+    .boothInfo .flexP{
+        display: inline;
+        border: none;
+    }
+    .boothInfo h2{
+        margin: 5px 0;
+        display: block;
+        text-align: center;
+    }
+
+    .boothInfo .flex{
+        margin: 0;
+        justify-content: center;
+        padding-top: 5px;
+        border-top: double 3px lightsteelblue;
+    }
+    .tag{
+        margin: 0 3px;
+    }
+
 }
 @media screen and (max-width: 480px) {
 	/* 480px以下に適用されるCSS（スマホ用） */
 
-    .boothInfo{
-        width: 95%;
-    }
-    .boothInfo .flexP{
-        border: none;
-    }
-    .boothInfo .flex{
-        justify-content: center;
-        width: 100%;
-        padding-top: 5px;
-        border-top: double 3px lightsteelblue;
-    }
-    .imageImage{
-        margin-bottom: 0;
-    }
+
 }

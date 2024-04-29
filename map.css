@@ -112,6 +112,9 @@ li{
 
 @media screen and (max-width: 959px) {
 	/* 959px以下に適用されるCSS（タブレット用） */
+    header{
+        height: 150px;
+    }
     .keyakiFes{
         transform: scale(60%) translate(-35%, -70%);
     }
