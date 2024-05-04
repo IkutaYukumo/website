@@ -10,7 +10,7 @@ header::after{
     content: "";
     height: 100%;
     width: 100%;
-    background-color: lightslategray;
+    background-color: lavender;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -298,9 +298,6 @@ main{
 
 @media screen and (max-width: 959px) {
 	/* 959px以下に適用されるCSS（タブレット用） */
-}
-@media screen and (max-width: 480px) {
-	/* 480px以下に適用されるCSS（スマホ用） */
     header::after{
         background-size: cover;
         
@@ -331,4 +328,8 @@ main{
     .triLeft, .triRight{
         display: none;
     }
+}
+@media screen and (max-width: 480px) {
+	/* 480px以下に適用されるCSS（スマホ用） */
+ 
 }

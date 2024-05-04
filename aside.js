@@ -2,6 +2,7 @@
 
     const button = document.getElementById('button');
     const aside = document.getElementById('aside');
+    aside.style.display = 'none';
 
     const clickButton =(e)=>{
         e.preventDefault();

@@ -40,9 +40,12 @@ main{
     margin: 10px;
     height: 150px;
     width: 200px;
+    background-color: lavender;
+    border-radius: 5px;
 }
 .imageImage img{
     overflow: hidden;
+    object-fit: cover;
     height: 100%;
     width: 100%;
     border-radius: 5px;

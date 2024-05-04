@@ -267,12 +267,17 @@ header h4{
 }
 .text h5{
     display: inline;
+    font-size: 105%;
     line-height: 200%;
     border: none;
 }
 .text ul{
     list-style: square;
     padding-left: 20px;
+}
+.text a{
+    color: blue;
+    border-bottom: solid 1px blue;
 }
 
 main h1{
