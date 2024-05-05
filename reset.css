@@ -119,6 +119,9 @@ body{
 .mono{
     font-family: monospace;
 }
+.big{
+    font-size: 150%;
+}
 h1, h2, h3, h4, h5{
     margin: 0;
     margin-bottom: 10px;
@@ -187,7 +190,7 @@ header h4{
 .circle, .circleM, .circleS{
     position: relative;
     border-radius: 50%;
-    background-color: rgba(176, 196, 222, 0.6); /*lightsteelblue*/
+    background-color: rgba(176, 196, 222, 0.8); /*lightsteelblue*/
 }
 .circle{
     position: absolute;
@@ -219,6 +222,7 @@ header h4{
     border-radius: 50%;
     box-sizing: border-box;
     border: solid 4px lightsteelblue;
+    opacity: 0.6;
 }
 .circle::after, .circleM::after, .circleS::after{
     position: absolute;
@@ -230,7 +234,7 @@ header h4{
     border-radius: 50%;
     box-sizing: border-box;
     border: solid 2px lightsteelblue;
-    opacity: 0.5;
+    opacity: 0.6;
 }
 
 .text{
@@ -266,14 +270,24 @@ header h4{
     text-align: center;
 }
 .text h5{
-    display: inline;
     font-size: 105%;
     line-height: 200%;
     border: none;
 }
+.text h5::before{
+    content: "";
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    clip-path: polygon(15% 30%, 85% 30%, 85% 100%, 15% 100%);
+    background-color: lightsteelblue;
+}
 .text ul{
     list-style: square;
     padding-left: 20px;
+}
+.text p{
+    text-align: left;
 }
 .text a{
     color: blue;

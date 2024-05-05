@@ -4,7 +4,7 @@ header{
     display: flex;
     overflow: hidden;
     height: 250px;
-    background-image: url(教室.png);
+    background-image: url(img/shokuhan.JPG);
     background-size: cover;
     background-position: center;
 }

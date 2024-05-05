@@ -20,32 +20,32 @@ header::after{
 @keyframes fadeIn {
   0%{
     opacity: 1;
-    background-image: url('教室.png');
+    background-image: url('img/文化祭ポスター画像.png');
   }
   20%{    
     opacity: 1;
-    background-image: url('教室.png');
+    background-image: url('img/文化祭ポスター画像.png');
 }
   25%{
     opacity: 0;
   }
   30%{
     opacity: 1;
-    background-image: url('img/文化祭ポスター画像.png');
+    background-image: url('img/gym.JPG');
   }
   70% {
     opacity: 1;
-    background-image: url('img/文化祭ポスター画像.png');
+    background-image: url('img/gym.JPG');
   }
   75%{
     opacity: 0;
   }
   80%{
     opacity: 1;
-    background-image: url('教室.png');
+    background-image: url('img/文化祭ポスター画像.png');
   }
   100%{
-    background-image: url('教室.png');
+    background-image: url('img/文化祭ポスター画像.png');
   }
 
 }
@@ -299,7 +299,7 @@ main{
 @media screen and (max-width: 959px) {
 	/* 959px以下に適用されるCSS（タブレット用） */
     header::after{
-        background-size: cover;
+        background-size: contain;
         
     }
     .keyakiFes{
