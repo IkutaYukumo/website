@@ -24,6 +24,9 @@
                     } else {
                         if (element.classList.contains(selectedValue)) {
                             element.style.display = "block"; // 選択されたオプションに対応する要素を表示
+                            let text = selectedValue;
+                            let text1 = document.getElementById('text1');
+                            text1.innerHTML = text; 
                         } else {
                             element.style.display = "none"; // それ以外の要素を非表示
                         }
@@ -55,6 +58,7 @@
                 </select>
             </div>
         </div>
+        <p id="text1"></p>
 <!-- ------------------------------------------------------------------ -->
 
         <div class="booth">
