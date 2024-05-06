@@ -20,10 +20,10 @@
                 const selectedValue = selectElement.value;
                 triggerElements.forEach(function (element) {
                     if (selectedValue === "") {
-                        element.style.display = "block";
+                        element.style.display = "flex";
                     } else {
                         if (element.classList.contains(selectedValue)) {
-                            element.style.display = "block"; // 選択されたオプションに対応する要素を表示
+                            element.style.display = "flex"; // 選択されたオプションに対応する要素を表示
                         } else {
                             element.style.display = "none"; // それ以外の要素を非表示
                         }
