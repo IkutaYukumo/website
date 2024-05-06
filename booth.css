@@ -81,7 +81,7 @@ main{
 
 }
 
-.trigger general{
+.triggerg{
     flex-shrink: 0;
     height: fit-content;
     margin: 0 10px;
@@ -92,7 +92,18 @@ main{
     border-radius: 12px;
 }
 
-.trigger outdoor{   
+.triggers{
+    flex-shrink: 0;
+    height: fit-content;
+    margin: 0 10px;
+    padding: 0 12px;
+    height: 24px;
+    color: aliceblue;
+    background-color: midnightblue;
+    border-radius: 12px;
+}
+
+.triggero{   
     flex-shrink: 0;
     height: fit-content;
     margin: 0 10px;
@@ -108,14 +119,19 @@ main{
     margin-right: 5px;
 }
 
-.trigger outdoor img{
+.triggero img{
     height: 60%;
     margin-right: 5px;
 }
-.trigger general img{
+.triggerg img{
     height: 60%;
     margin-right: 5px;
 }
+.triggers img{
+    height: 60%;
+    margin-right: 5px;
+}
+
 
 @media screen and (max-width: 959px) {
 	/* 959px以下に適用されるCSS（タブレット用） */
