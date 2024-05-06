@@ -20,7 +20,9 @@
                 const selectedValue = selectElement.value;
                 triggerElements.forEach(function (element) {
                     if (selectedValue === "") {
-                        element.style.display = "block"; // オプションが選択されていない場合、全て表示
+                        element.style.display = "block";
+                        let text1 = document.getElementById('text1');
+                        text1.innerHTML = "a"; // オプションが選択されていない場合、全て表示
                     } else {
                         if (element.classList.contains(selectedValue)) {
                             element.style.display = "block"; // 選択されたオプションに対応する要素を表示
