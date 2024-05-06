@@ -13,8 +13,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
     <script>
         document.addEventListener("DOMContentLoaded", function () {
-            const selectElement = document.querySelector("select");
-            const triggerElements = document.querySelectorAll(".trigger");
+            const selectElement = document.querySelector("#booth-select"); // id属性を指定してselect要素を取得する
+            const triggerElements = document.querySelectorAll(".booth"); // boothクラスの要素を取得する
     
             selectElement.addEventListener("change", function () {
                 const selectedValue = selectElement.value;
@@ -47,11 +47,11 @@
             <h1>模擬店一覧</h1>
             <div class="flex">
                 <p>絞り込み</p>
-                <select name="" size="1" id="">
+                <select name="" size="1" id="booth-select">
                     <option value="">すべて</option>
-                    <option value="">一般棟</option>
-                    <option value="">特別棟</option>
-                    <option value="">屋外</option>
+                    <option value="triggerg">一般棟</option>
+                    <option value="triggers">特別棟</option>
+                    <option value="triggero">屋外</option>
                 </select>
             </div>
         </div>
