@@ -86,10 +86,8 @@ main h3{
     .keyakiFes{
         transform: scale(60%) translate(-30%, -70%);
     }
-}
-@media screen and (max-width: 480px) {
-	/* 480px以下に適用されるCSS（スマホ用） */
-    .guide{
+
+        .guide{
         display: block;
     }
     .scroll{
@@ -109,4 +107,8 @@ main h3{
         margin: 0 1%;
         width: 98%;
     }
+}
+@media screen and (max-width: 480px) {
+	/* 480px以下に適用されるCSS（スマホ用） */
+
 }
