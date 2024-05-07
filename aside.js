@@ -2,14 +2,14 @@
 
     const button = document.getElementById('button');
     const aside = document.getElementById('aside');
-    aside.style.display = 'none';
+    aside.classList.add("none");
 
     const clickButton =(e)=>{
         e.preventDefault();
         if (aside.style.display == 'none') {
-            aside.style.display = 'block';
+            aside.classList.remove("none");
            } else {
-             aside.style.display = 'none';
+             aside.classList.add("none");
            }
     }
 
