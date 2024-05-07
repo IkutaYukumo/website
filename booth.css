@@ -132,9 +132,6 @@ main{
     margin-right: 5px;
 } */
 
-.none {
-  display: none;
-}
 
 @media screen and (max-width: 959px) {
 	/* 959px以下に適用されるCSS（タブレット用） */
