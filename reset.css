@@ -477,6 +477,7 @@ button{
     .phone{
         z-index: 20;
         position: fixed;
+	display: block;
         top: 0;
         padding: 10px;
         height: 100%;
