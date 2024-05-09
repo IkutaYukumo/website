@@ -23,6 +23,10 @@ iframe{
     width: 600px;
     border: double 3px lightsteelblue;
 }
+.flexP{
+   width: 100%;
+}
+	
 img{
     margin: auto;
     margin-bottom: 10px;
