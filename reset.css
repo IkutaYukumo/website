@@ -290,6 +290,7 @@ header h4{
     text-align: left;
 }
 .text a{
+    font-size: 90%;
     color: blue;
     border-bottom: solid 1px blue;
 }
