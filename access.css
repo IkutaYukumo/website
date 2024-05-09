@@ -23,6 +23,11 @@ iframe{
     width: 600px;
     border: double 3px lightsteelblue;
 }
+img{
+    margin: auto;
+    margin-bottom: 10px;
+    width: 48%;
+}
 @media screen and (max-width: 959px) {
 	/* 959px以下に適用されるCSS（タブレット用） */
     header{
@@ -33,6 +38,9 @@ iframe{
     }
     iframe{
         height: 250px;
+        width: 100%;
+    }
+    img{
         width: 100%;
     }
 }
