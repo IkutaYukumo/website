@@ -27,36 +27,31 @@ header::after{
 }
 
 @keyframes fadeIn {
-  0%{
-    opacity: 1;
-    background-image: url('img/文化祭ポスター画像.png');
-  }
-  20%{    
-    opacity: 1;
-    background-image: url('img/文化祭ポスター画像.png');
-}
-  25%{
-    opacity: 0;
-  }
-  30%{
-    opacity: 1;
-    background-image: url('img/gym.JPG');
-  }
-  70% {
-    opacity: 1;
-    background-image: url('img/gym.JPG');
-  }
-  75%{
-    opacity: 0;
-  }
-  80%{
-    opacity: 1;
-    background-image: url('img/文化祭ポスター画像.png');
-  }
-  100%{
-    background-image: url('img/文化祭ポスター画像.png');
-  }
-
+    0%{
+        opacity: 0;
+    }
+    5%{
+        opacity: 1;
+        background-image: url(img/文化祭ポスター画像.jpg);
+    }
+    45%{
+        opacity: 1;
+        background-image: url(img/文化祭ポスター画像.jpg);
+    }
+    50%{
+        opacity: 0;
+    }
+    55%{
+        opacity: 1;
+        background-image: url(img/gym.JPG);
+    }
+    95%{
+        opacity: 1;
+        background-image: url(img/gym.JPG);
+    }
+    100%{
+        opacity: 0;
+    }
 }
 
 
@@ -192,50 +187,13 @@ main{
 
 .slide{
     position: relative;
-    display: flex;
-    align-items: center;
-    margin: 20px 0;
-    width: 100%;
-    background-color: aliceblue;
-}
-.slide .flex{
-    flex-shrink: 0;
-    flex-wrap: wrap;
-    width: 92%;
-}
-.slideText{
-    margin: 10px 0;
-    flex: 1;
-    height: 200px;
-}
-.triLeft{
-    margin-right: 2%;
-    height: 60px;
-    width: 2%;
-    clip-path: polygon(100% 0, 100% 100%, 0 50%);
-    background-color: lightsteelblue;
-}
-.triRight{
-    margin-left: 2%;
-    height: 60px;
-    width: 2%;
-    clip-path: polygon(0 0, 0 100%, 100% 50%);
-    background-color: lightsteelblue;
-}
-
-.screen{
-    flex: 1;
-    position: relative;
-    display: flex;
-    margin: 10px 0;
-    margin-right: 2%;
-    justify-content: space-between;
+    margin: 30px auto;
+    height: 350px;
+    width: 50%;
+    background-color: lavender;
     outline: double 4px lightsteelblue;
 }
-.screen img{
-    width: 100%;
-}
-.screen::before, .screen::after{
+.slide::before, .slide::after{
     position: absolute;
     content: "";
     left: 50%;
@@ -244,16 +202,152 @@ main{
     border-left: 10px solid transparent;
     border-right: 10px solid transparent;
 }
-.screen::before{
+.slide::before{
+    z-index: 10;
     top: 0;
     border-top: 10px solid lightsteelblue;
 }
-.screen::after{
+.slide::after{
+    z-index: 10;
     bottom: 0;
     border-bottom: 10px solid lightsteelblue;
 }
 
+.slideImg{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    display: flex;
+    overflow: hidden;
+}
 
+.slideImg::after{
+    z-index: 5;
+    content: "";
+    height: 100%;
+    width: 100%;
+    background-color: lavender;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    animation: slider 30s infinite;
+}
+@keyframes slider {
+    0%{
+        opacity: 1;
+        background-image: url('img/gym.JPG');
+      }
+      8%{    
+        opacity: 1;
+        background-image: url('img/gym.JPG');
+    }
+      9%{
+        opacity: 0;
+      }
+      10%{
+        opacity: 1;
+        background-image: url('img/shomen2.JPG');
+      }
+      18% {
+        opacity: 1;
+        background-image: url('img/shomen2.JPG');
+      }
+      19%{
+        opacity: 0;
+      }
+      20%{
+        opacity: 1;
+        background-image: url('img/nakaniwa2.JPG');
+      }
+      28%{
+        opacity: 1;
+        background-image: url('img/nakaniwa2.JPG');
+      }
+      29%{
+        opacity: 0;
+      }
+      30%{
+        opacity: 1;
+        background-image: url('img/sta.JPG');
+      }
+      38%{
+        opacity: 1;
+        background-image: url('img/sta.JPG');
+      }
+      39%{
+        opacity: 0;
+      }
+      40%{
+        opacity: 1;
+        background-image: url('img/tea.JPG');
+      }
+      48%{
+        opacity: 1;
+        background-image: url('img/tea.JPG');
+      }
+      49%{
+        opacity: 0;
+      }
+      50%{
+        opacity: 1;
+        background-image: url('img/sho.JPG');
+      }
+      58%{
+        opacity: 1;
+        background-image: url('img/sho.JPG');
+      }
+      59%{
+        opacity: 0;
+      }
+      60%{
+        opacity: 1;
+        background-image: url('img/pc.JPG');
+      }
+      68%{
+        opacity: 1;
+        background-image: url('img/pc.JPG');
+      }
+      69%{
+        opacity: 0;
+      }
+      70%{
+        opacity: 1;
+        background-image: url('img/ca.JPG');
+      }
+      78%{
+        opacity: 1;
+        background-image: url('img/ca.JPG');
+      }
+      79%{
+        opacity: 0;
+      }
+      80%{
+        opacity: 1;
+        background-image: url('img/sha.JPG');
+      }
+      88%{
+        opacity: 1;
+        background-image: url('img/sha.JPG');
+      }
+      89%{
+        opacity: 0;
+      }
+      90%{
+        opacity: 1;
+        background-image: url('img/chu.JPG');
+      }
+      98%{
+        opacity: 1;
+        background-image: url('img/chu.JPG');
+      }
+      99%{
+        opacity: 0;
+      }
+      100%{
+        opacity: 0;
+      }
+
+}
 
 .coment{
     content: "aside";
@@ -330,8 +424,8 @@ main{
         margin: 20px 0;
     }
 
-    .slide .flex{
-        display: grid;
+    .slide{
+        height: 250px;
         width: 100%;
     }
     .triLeft, .triRight{
