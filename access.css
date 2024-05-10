@@ -24,8 +24,7 @@ iframe{
     border: double 3px lightsteelblue;
 }
 main img{
-    margin: auto;
-    margin-bottom: 10px;
+    margin: 20px auto;
     width: 48%;
     border: double 3px lightsteelblue;
 }
