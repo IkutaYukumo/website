@@ -1,0 +1,52 @@
+header{
+    position: relative;
+    display: flex;
+    overflow: hidden;
+    padding: 20px 0;
+    height: 250px;
+    background-image: url(img/shomen.JPG);
+    background-size: cover;
+    background-position: center;
+}
+
+.keyakiFes{
+    top: 40px;
+    left: 20px;
+}
+main{
+    margin: 20px 4%;
+    min-height: 600px;
+}
+iframe{
+    margin: 10px auto;
+    height: 400px;
+    width: 600px;
+    border: double 3px lightsteelblue;
+}
+main img{
+    margin: auto;
+    margin-bottom: 10px;
+    width: 48%;
+    border: double 3px lightsteelblue;
+}
+@media screen and (max-width: 959px) {
+	/* 959px以下に適用されるCSS（タブレット用） */
+    header{
+        height: 150px;
+    }
+    .keyakiFes{
+        transform: scale(60%) translate(-35%, -70%);
+    }
+    iframe{
+        height: 250px;
+        width: 100%;
+    }
+    main img{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 480px) {
+	/* 480px以下に適用されるCSS（スマホ用） */
+
+
+}
