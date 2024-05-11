@@ -51,6 +51,7 @@ header::after{
     }
     100%{
         opacity: 0;
+	background-image: url(img/文化祭ポスター画像.jpg);
     }
 }
 
