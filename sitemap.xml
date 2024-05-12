@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="https://keyaki.app/">
+  <url>
+    <loc>https://keyaki.app/booth</loc>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://keyaki.app/timeTable</loc>
+        <priority>0.8</priority>
+  </url> 
+    <url>
+    <loc>https://keyaki.app/map</loc>
+        <priority>0.8</priority>
+  </url> 
+    <url>
+    <loc>https://keyaki.app/notice</loc>
+        <priority>0.8</priority>
+  </url> 
+    <url>
+    <loc>https://keyaki.app/book</loc>
+        <priority>0.8</priority>
+  </url> 
+    <url>
+    <loc>https://keyaki.app/access</loc>
+        <priority>0.8</priority>
+  </url> 
+
+</urlset>
