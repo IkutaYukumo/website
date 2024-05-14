@@ -233,7 +233,7 @@ main{
     background-position: center;
     animation: slider 30s infinite;
 }
-@keyframes slider {
+/* @keyframes slider {
     0%{
         opacity: 1;
         background-image: url('img/gym.JPG');
@@ -348,7 +348,7 @@ main{
         opacity: 0;
       }
 
-}
+} */
 
 .coment{
     content: "aside";
@@ -402,6 +402,9 @@ main{
 
 @media screen and (max-width: 959px) {
 	/* 959px以下に適用されるCSS（タブレット用） */
+    header{
+      height: 585px;
+    }
     header::after{
         background-size: contain;
         
