@@ -23,10 +23,11 @@ header::after{
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
+     background-image: url(img/文化祭ポスター画像.jpg);
     animation: fadeIn 10s infinite;
 }
 
-@keyframes fadeIn {
+/* @keyframes fadeIn {
     0%{
         opacity: 0;
     }
@@ -53,7 +54,7 @@ header::after{
         opacity: 0;
 	background-image: url(img/文化祭ポスター画像.jpg);
     }
-}
+} */
 
 
 main{
