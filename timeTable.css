@@ -4,9 +4,9 @@ header{
     overflow: hidden;
     padding: 20px 0;
     height: 250px;
-    background-image: url(img/yushi.JPG);
+    background-image: url(img/gate.JPG);
     background-size: cover;
-    background-position: center;
+    background-position: bottom;
 }
 
 .keyakiFes{
