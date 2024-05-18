@@ -307,7 +307,7 @@ main h3{
     padding-bottom: 3px;
 }
 
-aside .pc{
+/* aside .pc{
     z-index: 20;
     position: fixed;
     left: 50%;
@@ -330,6 +330,60 @@ aside .pc::after{
 }
 aside .pc:hover{
     top: 0;
+} */
+
+.pc{
+    display: none;
+}
+button{
+    overflow: hidden;
+    z-index: 22;
+    display: block;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    background-color: rgba(176, 196, 222, 0.6);
+    border: none;
+    filter: drop-shadow(0 0 2px lightslategray);
+}
+button p{
+    margin: auto;
+    font-size: 200%;
+    color: aliceblue;
+    filter: drop-shadow(0 0 1px lightslategray);
+
+}
+.phone{
+    z-index: 20;
+    position: fixed;
+display: block;
+    top: 0;
+    padding: 10px;
+    height: 100%;
+    width: 100%;
+    background-color: lightsteelblue;
+}
+
+.phone h2{
+    font-size: 180%;
+    border: none;
+    margin-bottom: 80px;
+}
+.phone h2, .phone a{
+    color: aliceblue;
+    filter: drop-shadow(0 0 1px lightslategray);
+}
+.phone a:hover{
+    border-bottom: solid 2px aliceblue;
+}
+.phone p{
+    margin: 10px 20px;
+    font-size: x-large;
+    font-weight: bold;
+
 }
 
 footer{
@@ -440,10 +494,10 @@ select{
 }
 
 button{
-    display: none;
+    display: block;
 }
 .phone{
-    display: none;
+    display: block;
 }
 @media screen and (max-width: 959px) {
 	/* 959px以下に適用されるCSS（タブレット用） */
