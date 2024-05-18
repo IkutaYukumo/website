@@ -17,6 +17,14 @@ main{
     margin: 20px 4%;
     min-height: 600px;
 }
+.form{
+    display: inline-block;
+    padding: 10px;
+    background-color: aliceblue;
+    border-radius: 10px;
+    border: solid 1px blue;
+
+}
 @media screen and (max-width: 959px) {
 	/* 959px以下に適用されるCSS（タブレット用） */
     header{
