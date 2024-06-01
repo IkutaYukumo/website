@@ -1,0 +1,481 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="booth.css" />
+    <link rel="icon" href="校章.ico">
+    <title>模擬店一覧 | 第8回 けやき祭</title>
+    <meta name="description" >
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="第8回けやき祭ホームページ">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const selectElement = document.querySelector("#booth-select"); // id属性を指定してselect要素を取得する
+            const triggerElements = document.querySelectorAll(".booth"); // boothクラスの要素を取得する
+    
+            selectElement.addEventListener("change", function () {
+                const selectedValue = selectElement.value;
+                triggerElements.forEach(function (element) {
+                    if (selectedValue === "") {
+                        element.classList.remove("none");
+                    } else {
+                        if (element.classList.contains(selectedValue)) {
+                            element.classList.remove("none"); // 選択されたオプションに対応する要素を表示
+                        } else {
+                            element.classList.add("none"); // それ以外の要素を非表示
+                        }
+                    }
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <div class="keyakiFes">
+            <h3>模擬店一覧</h3>
+        </div>
+        <div class="circle"></div>
+    </header>
+
+
+    <main>
+        <div class="serectT">
+            <h1>模擬店一覧</h1>
+            <div class="flex">
+                <p>絞り込み</p>
+                <select name="" size="1" id="booth-select">
+                    <option value="">すべて</option>
+                    <option value="triggerg">一般棟</option>
+                    <option value="triggers">特別棟</option>
+                    <option value="triggero">屋外</option>
+                </select>
+            </div>
+        </div>
+<!-- ------------------------------------------------------------------ -->
+
+ 
+        <div class="booth triggerg">
+            <div class="imageImage"><img src="webp/2-1.webp" alt=""></div>
+            <div class="boothInfo">
+                <div class="flexP">
+                    <h2>テレビスタジオ～2.1ch～</h2>
+                    <div class="flex">
+                        <p class="tag"><img src="img/man.png" alt="">2-1</p>
+                        <p class="tag"><img src="img/mappin.png" alt="">2-1教室</p>
+                        <p class="tag"><img src="img/cube.png" alt="">発表＋クイズ</p>
+                    </div>
+                </div>
+                <p>さあ、始まった、2年1組クイズ番組。
+                    <br>今回の内容は東京都立博物館、国立科学博物館！
+                    <br>「Σ様」、「ゆうきの壁」など複数の番組が時間ごとに開催されているぞ！
+                    <br>また、クイズに参加すると、スタンプが集まって景品ゲットのチャンスも。
+                    <br>おっと、クイズが始まるな。
+                    <br>さあ、ぜひ2の1に来てくれ！
+                    </p>
+            </div>
+        </div>
+
+        <div class="booth triggerg">
+            <div class="imageImage"><img src="webp/2-2.webp" alt=""></div>
+            <div class="boothInfo">
+                <div class="flexP">
+                    <h2>真実への五稜星(みちしるべ)</h2>
+                    <div class="flex">
+                        <p class="tag"><img src="img/man.png" alt="">2-2</p>
+                        <p class="tag"><img src="img/mappin.png" alt="">2-2教室</p>
+                        <p class="tag"><img src="img/cube.png" alt="">発表＋クロスワード</p>
+                    </div>
+                </div>
+                <p>みなさん、ごきげんよう。今回の2年2組は「なぞとき」がテーマだ！ 盗まれてしまった刀。容疑者は3人。現場に残されたクロスワード。教室で行われる発表を聞き、犯人を導きだせ！
+                    <br>正解した人にはプレゼントも…
+                    </p>
+            </div>
+        </div>
+        
+        <!-- <div class="booth triggerg">
+            <div class="imageImage"><img src="教室.png" alt=""></div>
+            <div class="boothInfo">
+                <div class="flexP">
+                    <h2>模擬店名</h2>
+                    <div class="flex">
+                        <p class="tag"><img src="img/man.png" alt="">2-3</p>
+                        <p class="tag"><img src="img/mappin.png" alt="">2-3教室</p>
+                        <p class="tag"><img src="img/cube.png" alt="">アクティビティ</p>
+                    </div>
+                </div>
+                <p></p>
+            </div>
+        </div> -->
+
+        <div class="booth triggerg">
+            <div class="imageImage"><img src="webp/3-1.webp" alt=""></div>
+            <div class="boothInfo">
+                <div class="flexP">
+                    <h2>私立賭けまくり学園</h2>
+                    <div class="flex">
+                        <p class="tag"><img src="img/man.png" alt="">3-1</p>
+                        <p class="tag"><img src="img/mappin.png" alt="">3-1教室</p>
+                        <p class="tag"><img src="img/cube.png" alt="">カジノ</p>
+                    </div>
+                </div>
+                <p>ここ私立賭けまくり学園は、賭けによる階級制度によって成り立つーー
+                    <br>勝者として薔薇色の学園生活を送るのか？
+                    <br>敗者として屈辱に満ちた学園生活をおくるのか？
+                    <br>さぁ、貴方の運命にベットしよう。
+                    </p>
+            </div>
+        </div>
+
+        <div class="booth triggerg">
+            <div class="imageImage"><img src="webp/3-2.webp" alt=""></div>
+            <div class="boothInfo">
+                <div class="flexP">
+                    <h2>変な教室</h2>
+                    <div class="flex">
+                        <p class="tag"><img src="img/man.png" alt="">3-2</p>
+                        <p class="tag"><img src="img/mappin.png" alt="">3-2教室</p>
+                        <p class="tag"><img src="img/cube.png" alt="">間違い探し</p>
+                    </div>
+                </div>
+                <p>映画化もされた大人気小説「変な家」の 3-2教室ver. です。見慣れた教室なのに何かがおかしい… あなたはこの問題がわかりますか？ 3-2でまたお会いしましょう。</p>
+            </div>
+        </div>
+
+        <div class="booth triggerg">
+            <div class="imageImage"><img src="webp/3-3.webp" alt=""></div>
+            <div class="boothInfo">
+                <div class="flexP">
+                    <h2>榧場医院</h2>
+                    <div class="flex">
+                        <p class="tag"><img src="img/man.png" alt="">3-3</p>
+                        <p class="tag"><img src="img/mappin.png" alt="">3-3教室</p>
+                        <p class="tag"><img src="img/cube.png" alt="">脱出ゲーム</p>
+                    </div>
+                </div>
+                <p>かつて戦後の古河市には榧場医院が存在した。
+                <br>負傷者が多く運ばれてきたが、閉じこめられ、多くの人々が人体実験に使われてしまった。その患者たちが亡霊となり、心霊スポットとして有名になった。榧場医院にぜひいらしてください。</p>
+            </div>
+        </div>
+
+        <div class="booth triggerg">
+            <div class="imageImage"><img src="webp/4-1.webp" alt=""></div>
+            <div class="boothInfo">
+                <div class="flexP">
+                    <h2>絶望四一塞（ゼツボウヨイチサイ）</h2>
+                    <div class="flex">
+                        <p class="tag"><img src="img/man.png" alt="">4-1</p>
+                        <p class="tag"><img src="img/mappin.png" alt="">4-1教室</p>
+                        <p class="tag"><img src="img/cube.png" alt="">脱出ゲーム</p>
+                    </div>
+                </div>
+                <p>「みなさま、ごきげんよう。わたくしの名はヨイチです。今から始まるのはいったい何だと思いますか。簡単なゲーム？ それとも理不尽なゲーム？ ここから生きて帰りたければ、我々が仕掛けたゲームをすべて解くしかありませんよ。さぁ、絶望というゲームの始まりだ!!」
+                    <br>突如始まるゲーム。君たちは頭脳と肉体を使って様々なゲームをクリアし、ここから脱出することはできるのか!?
+                    </p>
+            </div>
+        </div>
+
+        <div class="booth triggerg">
+            <div class="imageImage"><img src="webp/4-2.webp" alt=""></div>
+            <div class="boothInfo">
+                <div class="flexP">
+                    <h2>ゴーストタウン</h2>
+                    <div class="flex">
+                        <p class="tag"><img src="img/man.png" alt="">4-2</p>
+                        <p class="tag"><img src="img/mappin.png" alt="">4-2教室</p>
+                        <p class="tag"><img src="img/cube.png" alt="">ホラー・迷路</p>
+                    </div>
+                </div>
+                <p>数年前、住民40名が突如死亡する事故があった。
+                    <br>成仏しきれなかった住民たちを救うよう依頼された君たちはお札を手にゴーストタウンに忍び込むことに…
+                    <br>君たちは亡霊となった住民たちを救うことができるのか？
+                    </p>
+            </div>
+        </div>
+        
+        <div class="booth triggers">
+            <div class="imageImage"><img src="webp/4-3.webp" alt=""></div>
+            <div class="boothInfo">
+                <div class="flexP">
+                    <h2>せばたクリニック跡</h2>
+                    <div class="flex">
+                        <p class="tag"><img src="img/man.png" alt="">4-3</p>
+                        <p class="tag"><img src="img/mappin.png" alt="">社会科室</p>
+                        <p class="tag"><img src="img/cube.png" alt="">お化け屋敷</p>
+                    </div>
+                </div>
+                <p>病院をモチーフにしたお化け屋敷です。
+                    <br>突然廃病院となったせばたクリニックで一体なにが起こったのか。ぜひ、自分の目で確かめてみてください。
+                    医師・ナース一同みなさんのことをお待ちしています。
+                    <br>ミッションあり クリアで景品get
+                    <br>一回50円かかります
+                    <br>ぜひ来てください!!
+                    </p>
+            </div>
+        </div>
+
+        <div class="booth triggero">
+            <div class="imageImage"><img src="webp/5-1.webp" alt=""></div>
+            <div class="boothInfo">
+                <div class="flexP">
+                    <h2>マツドナルド</h2>
+                    <div class="flex">
+                        <p class="tag"><img src="img/man.png" alt="">5-1</p>
+                        <p class="tag"><img src="img/mappin.png" alt="">中庭</p>
+                        <p class="tag"><img src="img/cube.png" alt="">ふりふりポテト</p>
+                    </div>
+                </div>
+                <p>期間限定！ 大人も子どもも楽しめる！
+                    <br>中庭にてふりふりポテトを1袋300円で販売します。コンソメ味などのさまざまな味の中からお好きな味を選べます。よく振ってお召し上がりください。
+                    </p>
+            </div>
+        </div>
+
+        <!-- <div class="booth triggerg">
+            <div class="imageImage"><img src="boothImg/5-2.jpeg" alt=""></div>
+            <div class="boothInfo">
+                <div class="flexP">
+                    <h2>模擬店名</h2>
+                    <div class="flex">
+                        <p class="tag"><img src="img/man.png" alt="">5-2</p>
+                        <p class="tag"><img src="img/mappin.png" alt="">5-2教室</p>
+                        <p class="tag"><img src="img/cube.png" alt="">アクティビティ</p>
+                    </div>
+                </div>
+                <p></p>
+            </div>
+        </div> -->
+
+        <div class="booth triggerg">
+            <div class="imageImage"><img src="webp/5-3.webp" alt=""></div>
+            <div class="boothInfo">
+                <div class="flexP">
+                    <h2>クイズ! あなたは5年3組より賢いの?</h2>
+                    <div class="flex">
+                        <p class="tag"><img src="img/man.png" alt="">5-3</p>
+                        <p class="tag"><img src="img/mappin.png" alt="">5-3教室</p>
+                        <p class="tag"><img src="img/cube.png" alt="">クイズ大会</p>
+                    </div>
+                </div>
+                <p>約5問の問題が出題されます。正解した数に応じて、景品をプレゼントします。参加費は無料で、毎回違う問題を出題するので、何度来ても楽しめると思います。</p>
+            </div>
+        </div>
+
+        <div class="booth triggero">
+            <div class="imageImage"><img src="webp/6-1.webp" alt=""></div>
+            <div class="boothInfo">
+                <div class="flexP">
+                    <h2>フカサワっフル</h2>
+                    <div class="flex">
+                        <p class="tag"><img src="img/man.png" alt="">6-1</p>
+                        <p class="tag"><img src="img/mappin.png" alt="">中庭</p>
+                        <p class="tag"><img src="img/cube.png" alt="">ワッフル</p>
+                    </div>
+                </div>
+                <p>古河中等の先生方の好きな食べもの・飲み物専門店!!
+                    <br>・ワッフル（バニラアイス，抹茶，チョコ，メープル）：300円
+                    <br>・コーラ，ファンタグレープ，オレンジ100%ジュース，アイスコーヒー，ウィルキンソン：100円
+                    </p>
+            </div>
+        </div>
+
+        <div class="booth triggero">
+            <div class="imageImage"><img src="webp/6-2.webp" alt=""></div>
+            <div class="boothInfo">
+                <div class="flexP">
+                    <h2>深屋</h2>
+                    <div class="flex">
+                        <p class="tag"><img src="img/man.png" alt="">6-2</p>
+                        <p class="tag"><img src="img/mappin.png" alt="">アカデミックホールピロティー前</p>
+                        <p class="tag"><img src="img/cube.png" alt="">やきそば・フランクフルト</p>
+                    </div>
+                </div>
+                <p>6-2深谷先生の "深屋" が満を持して開店!!
+                    <br>AHピロティー前にて焼きそば300円、フランクフルト200円合わせてなんとワンコインで販売中
+                    <br>深屋の昔懐かしの美味しい味、ぜひご堪能あれ!!
+                    </p>
+            </div>
+        </div>
+        
+        <div class="booth triggerg">
+            <div class="imageImage"><img src="webp/6-3.webp" alt=""></div>
+            <div class="boothInfo">
+                <div class="flexP">
+                    <h2>株式会社 7th探偵事務所</h2>
+                    <div class="flex">
+                        <p class="tag"><img src="img/man.png" alt="">6-3</p>
+                        <p class="tag"><img src="img/mappin.png" alt="">6-3教室</p>
+                        <p class="tag"><img src="img/cube.png" alt="">謎解き</p>
+                    </div>
+                </div>
+                <p>古河中等に存在する独立機関、株式会社 7th探偵事務所。そこでは社員が日々謎解きでしのぎを削っている。今日は年に一度だけ行われる入社試験の日。厳しい謎解きの試験を乗り越えられる受験者はいるのか？</p>
+            </div>
+        </div>
+
+        <div class="booth triggers">
+            <div class="imageImage"><img src="webp/英語部.webp" alt=""></div>
+            <div class="boothInfo">
+                <div class="flexP">
+                    <h2>英語で世界を旅しよう<br>~ Let’s travel the world through English ~</h2>
+                    <div class="flex">
+                        <p class="tag"><img src="img/man.png" alt="">英語部</p>
+                        <p class="tag"><img src="img/mappin.png" alt="">アカデミックホール</p>
+                        <p class="tag"><img src="img/cube.png" alt="">プレゼンテーション</p>
+                    </div>
+                </div>
+                <p>Hello everyone! We are English club!
+                    <br>私達英語部は、世界のお菓子・ゲーム・お祭りなどについて紹介する1日限りの世界旅行に皆様をお連れいたします。
+                    <br>その他、皆さんに身近な話から面白い異文化まで幅広くお話します。
+                    <br>10:45〜11:45、12:45〜13:30、アカデミックホールにて部員一同皆さんをお待ちしております！
+                    </p>
+            </div>
+        </div>
+        <div class="booth triggers">
+            <div class="imageImage"><img src="webp/科学部.webp" alt=""></div>
+            <div class="boothInfo">
+                <div class="flexP">
+                    <h2>未来の科学者たちへ Σ理科教室</h2>
+                    <div class="flex">
+                        <p class="tag"><img src="img/man.png" alt="">科学部</p>
+                        <p class="tag"><img src="img/mappin.png" alt="">生物室・物理室</p>
+                        <p class="tag"><img src="img/cube.png" alt="">実験・展示</p>
+                    </div>
+                </div>
+                <p>科学部へようこそ！ ここではワクワクする展示や実験が盛りだくさん。
+                    <br>科学が好きな方もそうでない方も気軽に遊びにきてください。
+                    <br>皆様のご来場をお待ちしています。
+                    </p>
+            </div>
+        </div>
+        <div class="booth triggero">
+            <div class="imageImage"><img src="webp/サッカー部.webp" alt=""></div>
+            <div class="boothInfo">
+                <div class="flexP">
+                    <h2>蹴的</h2>
+                    <div class="flex">
+                        <p class="tag"><img src="img/man.png" alt="">サッカー部</p>
+                        <p class="tag"><img src="img/mappin.png" alt="">グラウンド</p>
+                        <p class="tag"><img src="img/cube.png" alt="">キックターゲット</p>
+                    </div>
+                </div>
+                <p>射的は手を使うゲームだが、蹴的は足を使うゲームだ!
+                    <br>点数が書かれた的を狙って、高得点を目指そう!
+                    <br>高得点の人には景品があるぞ。みんなで蹴的やろうぜ!
+                    <br>（参加費無料）
+                    </p>
+            </div>
+        </div>
+        <div class="booth triggerg">
+            <div class="imageImage"><img src="webp/写真同好会.webp" alt=""></div>
+            <div class="boothInfo">
+                <div class="flexP">
+                    <h2>NΣW写真館</h2>
+                    <div class="flex">
+                        <p class="tag"><img src="img/man.png" alt="">写真同好会</p>
+                        <p class="tag"><img src="img/mappin.png" alt="">6-1教室</p>
+                        <p class="tag"><img src="img/cube.png" alt="">展示会・チェキ会</p>
+                    </div>
+                </div>
+                <p>写真同好会です! 6-1教室にて私達が撮った写真を展示しています。また、Σンとの撮影会は2部制で第1部 9時40分〜10時10分、第2部 1時〜1時半です。ぜひ遊びに来てください。
+                    </p>
+            </div>
+        </div>
+        <div class="booth triggero">
+            <div class="imageImage"><img src="webp/野球部.webp" alt=""></div>
+            <div class="boothInfo">
+                <div class="flexP">
+                    <h2>野球部ストラックアウト</h2>
+                    <div class="flex">
+                        <p class="tag"><img src="img/man.png" alt="">軟式野球部</p>
+                        <p class="tag"><img src="img/mappin.png" alt="">グラウンド</p>
+                        <p class="tag"><img src="img/cube.png" alt="">ストラックアウト</p>
+                    </div>
+                </div>
+                <p>野球部が5年ぶりとなる文化祭企画を実施
+                    <br>君は野球部に挑戦し見事的を打ち抜き野球部を超えることができるのか。
+                    <br>1回100円で景品も用意してあります。君の挑戦を待っています。 
+                    </p>
+            </div>
+        </div>
+        <div class="booth triggerg">
+            <div class="imageImage"><img src="webp/文藝部.webp" alt=""></div>
+            <div class="boothInfo">
+                <div class="flexP">
+                    <h2>choco and..</h2>
+                    <div class="flex">
+                        <p class="tag"><img src="img/man.png" alt="">文藝部</p>
+                        <p class="tag"><img src="img/mappin.png" alt="">6-1教室</p>
+                        <p class="tag"><img src="img/cube.png" alt="">グッズ販売</p>
+                    </div>
+                </div>
+                <p>文藝部公式マスコットキャラクターの「ちょこっとさん」のグッズを販売しています。キーホルダー、ハーバリウムなどのとっても可愛いグッズやメモ帳、消しゴムなどの実用的なグッズも販売しています。
+                    <br>数量限定ですのでお買い逃しなく!!
+                    </p>
+            </div>
+        </div>
+        <div class="booth triggers">
+            <div class="imageImage"><img src="webp/pc.webp" alt=""></div>
+            <div class="boothInfo">
+                <div class="flexP">
+                    <h2>Welcome to PC world</h2>
+                    <div class="flex">
+                        <p class="tag"><img src="img/man.png" alt="">パソコン部</p>
+                        <p class="tag"><img src="img/mappin.png" alt="">パソコン室</p>
+                        <p class="tag"><img src="img/cube.png" alt="">作品展示</p>
+                    </div>
+                </div>
+                <p>パソコン部では部員が制作したゲームやロボットで遊べる他、様々な展示を行っています。冷房も効いています。来てね。</p>
+            </div>
+        </div>
+  
+<!-- ------------------------------------------------------------------ -->
+    </main>
+    <aside>
+        <div class="pc">
+            <div>
+                <a href="index.html"><img src="img/home.png" alt=""><p>ホーム</p></a>
+                <a href="booth.html"><img src="img/shop.png" alt=""><p>模擬店一覧</p></a>
+                <a href="timeTable.html"><img src="img/schedule.png" alt=""><p>タイムテーブル</p></a>
+                <a href="map.html"><img src="img/mappinB.png" alt=""><p>校内マップ</p></a>
+                <a href="notice.html"><img src="img/notice.png" alt=""><p>お知らせ</p></a>
+            </div>
+        </div>
+        <button id="button" class="button"><p>≡</p></button>
+        <div id="aside" class="phone none">
+            <div>
+                <h2>けやき祭</h2>
+                <p><a href="index.html">ホーム</a></p>
+                <p><a href="booth.html">模擬店一覧</a></p>
+                <p><a href="timeTable.html">タイムテーブル</a></p>
+                <p><a href="map.html">校内マップ</a></p>
+                <p><a href="notice.html">お知らせ</a></p>
+                <br>
+                <p><a href="book.html">事前登録</a></p>
+                <p><a href="access.html">アクセス</a></p>
+            </div>
+        </div>
+    </aside>
+    <footer>
+        <div class="school">
+            <h2>茨城県立古河中等教育学校</h2>
+            <p>〒306-0225 茨城県古河市磯部846</p>
+        </div>
+        <div class="flex"><div class="tagF"><h3>TEL</h3></div>
+        <a href="tel:0280-92-4551"><p>0280-92-4551</p></a></div>
+        <div class="flex"><div class="tagF"><h3>HP</h3></div>
+        <a href="https://www.koga-cs.ibk.ed.jp"><p>https://www.koga-cs.ibk.ed.jp</p></a></div>
+        <div class="flex"><div class="tagF"><h3>Email</h3></div>
+        <a href="mailto:koho@koga-cs.ibk.ed.jp"><p>koho@koga-cs.ibk.ed.jp</p></a></div>
+        <address>
+            <p>&copy;2024 古河中等教育学校文化祭実行委員会 All Rights Reserved.</p>
+        </address>
+    </footer>
+
+    <script type="text/javascript" src="aside.js"></script>
+</body>
+
+
+</html>
