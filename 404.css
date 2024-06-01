@@ -1,0 +1,24 @@
+header{
+    position: relative;
+    display: flex;
+    overflow: hidden;
+    padding: 20px 0;
+    height: 250px;
+    background-image: url(webp/shomen.webp);
+    background-size: cover;
+    background-position: center;
+}
+
+.keyakiFes{
+    top: 40px;
+    left: 70px;
+}
+main{
+    margin: 20px 4%;
+    min-height: 300px;
+}
+
+ul a{
+    color: blue;
+    border-bottom: solid 1px blue;
+}
