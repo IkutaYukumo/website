@@ -4,7 +4,7 @@ header{
     overflow: hidden;
     padding: 20px 0;
     height: 250px;
-    background-image: url(img/nakaniwa.JPG);
+    background-image: url(webp/nakaniwa.webp);
     background-size: cover;
     background-position: top;
 }
@@ -103,6 +103,9 @@ li{
     border-radius: 5px;
 } */
 .mapInfo h3{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
     padding-bottom: 10px;
     margin-bottom: 10px;
     border-bottom: solid 1px lightsteelblue;
@@ -120,15 +123,26 @@ li{
     }
 
     .floorMap{
-        display: grid;
+        display: block;
         height: fit-content;
         width: 100%;
+        overflow: hidden;
     }
     .mapImg, .mapInfo{
         width: 100%;
     }
     .mapText{
         height: fit-content;
+        width: 100%;
+    }
+    .mapInfo
+    {
+        height: fit-content;
+    }
+    .mapInfo h3{
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
     }
 }
 @media screen and (max-width: 480px) {

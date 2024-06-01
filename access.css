@@ -4,7 +4,7 @@ header{
     overflow: hidden;
     padding: 20px 0;
     height: 250px;
-    background-image: url(img/shomen.JPG);
+    background-image: url(webp/shomen.webp);
     background-size: cover;
     background-position: center;
 }

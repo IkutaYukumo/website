@@ -4,7 +4,7 @@ header{
     overflow: hidden;
     padding: 20px 0;
     height: 250px;
-    background-image: url(img/gate.JPG);
+    background-image: url(webp/gate.webp);
     background-size: cover;
     background-position: bottom;
 }
@@ -41,6 +41,7 @@ main h3{
 }
 .timeTable h4{
     padding: 3px 0;
+    font-size: 120%;
     border: none;
     color: aliceblue;
     background-color: midnightblue;
@@ -69,6 +70,12 @@ main h3{
     height: 60%;
     margin-right: 5px;
 }
+
+.t{
+    margin: 10px;
+    text-align: start;
+}
+
 .triBottom{
     margin: 10px auto;
     height: 20px;
