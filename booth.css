@@ -69,6 +69,7 @@ main{
 }
 .boothInfo .flex{
     margin: 0 10px;
+    flex-wrap: wrap;
 }
 .tag{
     flex-shrink: 0;
