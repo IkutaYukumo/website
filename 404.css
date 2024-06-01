@@ -15,9 +15,11 @@ header{
 }
 main{
     margin: 20px 4%;
-    min-height: 300px;
+    min-height: 400px;
 }
-
+ul{
+    margin: 0 10px;
+}
 ul a{
     color: blue;
     border-bottom: solid 1px blue;
@@ -30,7 +32,7 @@ ul a{
         height: 150px;
     }
     .keyakiFes{
-        transform: scale(60%) translate(-35%, -70%);
+        transform: scale(60%) translate(-70%, -70%);
     }
 }
 @media screen and (max-width: 480px) {
