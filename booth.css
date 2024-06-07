@@ -19,7 +19,9 @@ main{
     min-height: 600px;
 }
 
-
+iframe{
+    margin-bottom: 20px;
+}
 .booth{
     display: flex;
     overflow: hidden;
